@@ -1,11 +1,11 @@
 body {
-  width: 100%;
+  width: 1440px;
   height: 100%;
   background-color: hsl(185, 75%, 39%);
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: -100% 80%, 200% -40%;
-  background-size: auto, auto;
+  background-position: -200px -500px, 720px 250px;
+  background-size: 900px, 900px;
   margin: 0px;
   padding: 0px;
 }
@@ -13,8 +13,8 @@ body {
 .perfil_box {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 280px;
+  width: 290px;
+  height: 320px;
   border-radius: 10px;
   background-color: white;
   margin: 12% auto 0px;
@@ -85,4 +85,16 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    
+  }
 }
