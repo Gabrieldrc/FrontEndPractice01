@@ -1,5 +1,5 @@
 body {
-  width: 1440px;
+  width: 1420px;
   height: 100%;
   background-color: hsl(185, 75%, 39%);
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
@@ -10,6 +10,11 @@ body {
   padding: 0px;
 }
 
+.main_container {
+  margin: 10% auto;
+  width: fit-content;
+}
+
 .perfil_box {
   display: flex;
   flex-direction: column;
@@ -17,7 +22,7 @@ body {
   height: 320px;
   border-radius: 10px;
   background-color: white;
-  margin: 12% auto 0px;
+  /* margin: 10% auto 0px; */
 }
 
 .background_image {
@@ -89,12 +94,22 @@ p {
 
 @media screen and (max-width: 500px) {
   body {
-    
+    max-width: 375px;
+    background-position: -500px -400px, 187px 300px;
+    background-size: 800px, 800px;   
+  }
+  .main_container {
+    margin: 40% auto;
   }
 }
 
 @media screen and (min-width: 1440px) {
   body {
-    
+    width: 1440px;
+    background-position: -200px -500px, 720px 250px;
+    background-size: 900px, 900px;  
+  }
+  .main_container {
+    margin: 10% auto;
   }
 }
