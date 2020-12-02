@@ -1,26 +1,23 @@
 body {
-  width: 1440px;
+  width: 100%;
+  height: 100%;
   background-color: hsl(185, 75%, 39%);
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: -100% 80%, 200% -40%;
   background-size: auto, auto;
-}
-
-.body_content {
-  width: inherit;
-  display: flex;
-  align-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .perfil_box {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 260px;
   height: 280px;
   border-radius: 10px;
   background-color: white;
-  margin: auto;
+  margin: 12% auto 0px;
 }
 
 .background_image {
@@ -34,7 +31,7 @@ body {
   display: flex;
   position: relative;
   justify-content: center;
-  height: 45%;
+  height: 40%;
   border-bottom: hsla(0, 0%, 59%, 0.5) solid 1px;
 }
 
@@ -55,12 +52,10 @@ body {
 .profile_data {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 1px;
-  height: 20%;
-  background-color: hsla(0, 0%, 59%, 0.5);
+  grid-column-gap: 0px;
+  height: 25%;
 }
 .profile_data .column {
-  background-color: white;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -68,7 +63,7 @@ body {
 }
 p {
   font-size: 18px;
-  margin: 0px auto;
+  margin: 10px auto 0px;
   font-family: 'Kumbh Sans', sans-serif;
 }
 .dark_font {
@@ -78,8 +73,11 @@ p {
   color: hsl(0, 0%, 59%);
   font-weight: 400;
 }
-.short_font {
+.middle_font {
   font-size: 15px;
+}
+.short_font {
+  font-size: 10px;
 }
 .attribution {
   font-size: 11px;
